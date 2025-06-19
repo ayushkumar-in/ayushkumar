@@ -4,17 +4,17 @@
           /* background: #979794; */
           box-sizing: border-box;
           position: relative;
-          border-radius:8px;
+          border-radius:10px;
           perspective: 1000px;
         }
 
         .loader:before{
           content: '';
           position: absolute;
-          left: 10px;
-          right: 10px;
-          top: 10px;
-          bottom: 10px;
+          left: 2px;
+          right: 2px;
+          top: 2px;
+          bottom: 2px;
           border-radius:8px;
           background: #f5f5f5  no-repeat;
           background-size: 60px 10px;
@@ -32,11 +32,11 @@
         .loader:after {
           content: '';
             position: absolute;
-            width: calc(50% - 10px);
-            right: 10px;
-            top: 10px;
-            bottom: 10px;
-            border-radius: 8px;
+            width: calc(50% - 2px);
+            right: 2px;
+            top: 2px;
+            bottom: 2px;
+            border-radius: 0 8px 8px 0;
             background: #fff no-repeat;
             background-size: 60px 10px;
             background-image: linear-gradient(#ddd 100px, transparent 0), 

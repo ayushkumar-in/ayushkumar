@@ -90,6 +90,7 @@ intro-text{
 name{
     width: 20%;
     min-width: 15.625rem;
+    margin-left: var(--gap-2);
 }
 header{
     position: sticky;
@@ -143,12 +144,12 @@ logo{
 container{
     display: flex;
     width: 100%;
-    max-width: 1128px;
+    max-width: 1200px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 
-    padding: var(--gap-2);
+    padding: var(--gap-1);
     box-sizing: border-box;
 }
 .main-container{
@@ -164,6 +165,7 @@ content{
 }
 hyperlink-container{
     gap: var(--gap-2);
+    margin-right: var(--gap-2);
 }
 social{
     aspect-ratio: 1/1;
@@ -182,10 +184,14 @@ social{
 .figma{
     background-image: url("../icons/figma.svg");
 }
+.insta{
+    background-image: url("../icons/instagram.svg");
+}
 
 @media screen and (max-width: 900px) {
     name{
         text-align: center;
+        margin-left: 0;;
     }
     intro-text{
         text-align: center;
@@ -195,5 +201,8 @@ social{
     }
     .header{
         flex-direction: column;
+    }
+    hyperlink-container{
+        margin-right: 0;
     }
 }

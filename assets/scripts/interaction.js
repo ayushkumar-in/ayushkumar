@@ -1,6 +1,8 @@
+const urlEmail ="mailto:ayush_kumar24@outlook.com";
 const urlLinkedin = "https://www.linkedin.com/in/jkayushkumar";
 const urlFigma = "https://www.figma.com/@ayushkumar_in";
-const urlEmail ="mailto:ayush_kumar24@outlook.com";
+const urlInsta = "https://www.instagram.com/ayushkumar.in";
+
 
 function openNewTab(site){
     switch (site){
@@ -12,5 +14,8 @@ function openNewTab(site){
             break;
         case 'email':
             window.open(urlEmail,'_blank').focus();
+            break;
+        case 'insta':
+            window.open(urlInsta,'_blank').focus();
     }
 }
