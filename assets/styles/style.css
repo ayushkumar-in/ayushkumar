@@ -1,0 +1,198 @@
+:root{
+    --theme-color-dark:#030303;
+    --theme-color-accent-1:#3f3f3f;
+    --theme-color-accent-2:#6f6f6f;
+    --theme-color-accent-3:#9f9f9f;
+    --theme-color-accent-4:#cfcfcf;
+    --theme-color-accent-5:#efefef;
+    --theme-color-light:#ffffff;
+
+    /* #region web typograpgy */
+    --web-text-body-s: 1rem;
+    --web-text-body: 1.125rem;
+    --web-text-body-l: 1.25rem;
+
+    --web-text-header : 1.625rem;
+    --web-text-header-l: 1.875rem;
+    --web-text-header-xl: 2.125rem;
+    --web-text-header-xxl: 2.5rem;
+
+    --web-weight-light:200;
+    --web-weight-normal: 400;
+    --web-weight-bold:600;
+
+    --web-line-height-body:1.8;
+    --web-line-height-header:1.2;
+    --web-line-height-note:1.4;
+    /* #endregion */
+
+    --gap-base: .5rem;
+    --gap-1: 1rem;
+    --gap-2: 1.5rem;
+    --gap-3: 2rem;
+    --gap-4: 4rem;
+
+}
+body{
+    background-color: var(--theme-color-accent-5);
+    color: var(--theme-color-dark);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: var(--web-weight-normal);
+    font-size: var(--web-text-body);
+    font-style: normal;
+    line-height: var(--web-line-height-body)
+}
+.glass{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+intro{
+    z-index: 100;
+    display: block;
+    top:0;
+    left: 0;
+    width: 100%;
+    background: var(--theme-color-light);
+
+}
+.intro{
+    display: flex;
+    gap: var(--gap-1) var(--gap-4);
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 0 !important;
+    height: max-content;
+}
+dp{
+    display: block;
+    aspect-ratio: 1 / 1;
+    height: 100%;
+    min-height: 12.5rem;
+    border: 1px solid var(--theme-color-accent-4);
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-image: url("../images/dp.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+intro-text{
+    min-width: 15.625rem;
+}
+name{
+    width: 20%;
+    min-width: 15.625rem;
+}
+header{
+    position: sticky;
+    z-index: 99;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    box-sizing: border-box;
+    font-size: var(--web-text-header-l);
+    font-weight: var(--web-weight-bold);
+    
+    background-color: var(--theme-color-light);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: var(--web-line-height-header);
+    gap: var(--gap-1);
+}
+.flex-x{
+    display: flex;
+    flex-direction: row;
+}
+.flex-y{
+    display: flex;
+    flex-direction: column;
+}
+.fill-container{
+    flex: 1 0 0;
+    min-width: 15.625rem;
+}
+subheader{
+    font-size: var(--web-text-body-l);
+    margin-top: var(--gap-1);
+    box-sizing: border-box;
+    line-height: var(--web-line-height-note);
+    font-weight: var(--web-weight-bold);
+}
+logo{
+    background-image: url("../images/ayushkumar_dark.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+}
+container{
+    display: flex;
+    width: 100%;
+    max-width: 1128px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: var(--gap-2);
+    box-sizing: border-box;
+}
+.main-container{
+    gap: var(--gap-1);
+}
+content{
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid var(--theme-color-accent-4);
+    border-radius: var(--gap-base);
+    padding: var(--gap-1);
+    background: var(--theme-color-light);
+}
+hyperlink-container{
+    gap: var(--gap-2);
+}
+social{
+    aspect-ratio: 1/1;
+    width: 2rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.linkedin{
+    background-image: url("../icons/linkedin.svg");
+}
+.outlook{
+    background-image: url("../icons/outlook.svg");
+}
+.figma{
+    background-image: url("../icons/figma.svg");
+}
+
+@media screen and (max-width: 900px) {
+    name{
+        text-align: center;
+    }
+    intro-text{
+        text-align: center;
+    }
+    .intro{
+        flex-direction: column;
+    }
+    .header{
+        flex-direction: column;
+    }
+}
