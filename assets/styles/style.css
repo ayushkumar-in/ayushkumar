@@ -8,14 +8,15 @@
     --theme-color-light:#ffffff;
 
     /* #region web typograpgy */
-    --web-text-body-s: 1rem;
-    --web-text-body: 1.125rem;
-    --web-text-body-l: 1.25rem;
+    --web-text-body-s: .875rem;
+    --web-text-body: 1rem;
+    --web-text-body-l: 1.125rem;
+    --web-text-body-xl:1.25rem;
 
-    --web-text-header : 1.625rem;
-    --web-text-header-l: 1.875rem;
-    --web-text-header-xl: 2.125rem;
-    --web-text-header-xxl: 2.5rem;
+    --web-text-header : 1.375rem;
+    --web-text-header-l: 1.5rem;
+    --web-text-header-xl: 1.625rem;
+    --web-text-header-xxl: 1.875rem;
 
     --web-weight-light:200;
     --web-weight-normal: 400;
@@ -100,7 +101,7 @@ header{
     border-left: 0 !important;
     border-right: 0 !important;
     box-sizing: border-box;
-    font-size: var(--web-text-header-l);
+    font-size: var(--web-text-header);
     font-weight: var(--web-weight-bold);
     
     background-color: var(--theme-color-light);
