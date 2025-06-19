@@ -177,6 +177,8 @@ social{
     background-repeat: no-repeat;
     cursor: pointer;
 }
+social:hover{transform: scale(1.4);}
+social:active{transform: scale(1.4);}
 .linkedin{
     background-image: url("../icons/linkedin.svg");
 }
