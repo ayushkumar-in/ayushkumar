@@ -2,6 +2,7 @@ const urlEmail ="mailto:ayush_kumar24@outlook.com";
 const urlLinkedin = "https://www.linkedin.com/in/jkayushkumar";
 const urlFigma = "https://www.figma.com/@ayushkumar_in";
 const urlInsta = "https://www.instagram.com/ayushkumar.in";
+const urlResume = "assets/documents/AyushKumar_Resume.pdf"
 
 
 function openNewTab(site){
@@ -17,5 +18,15 @@ function openNewTab(site){
             break;
         case 'insta':
             window.open(urlInsta,'_blank').focus();
+            break;
+        case 'resume':
+            window.open(urlResume,'_blank').focus();
+    }
+}
+
+function ctaClick(action){
+    switch(action){
+        case 'resume':
+            break;
     }
 }

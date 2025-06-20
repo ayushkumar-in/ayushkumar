@@ -11,20 +11,20 @@
     --web-text-body-s: .875rem;
     --web-text-body: 1rem;
     --web-text-body-l: 1.125rem;
-    --web-text-body-xl:1.25rem;
+    --web-text-body-xl: 1.25rem;
 
     --web-text-header : 1.375rem;
     --web-text-header-l: 1.5rem;
     --web-text-header-xl: 1.625rem;
     --web-text-header-xxl: 1.875rem;
 
-    --web-weight-light:200;
+    --web-weight-light: 200;
     --web-weight-normal: 400;
-    --web-weight-bold:600;
+    --web-weight-bold: 600;
 
-    --web-line-height-body:1.8;
-    --web-line-height-header:1.2;
-    --web-line-height-note:1.4;
+    --web-line-height-body: 1.8;
+    --web-line-height-header: 1.2;
+    --web-line-height-note: 1.4;
     /* #endregion */
 
     --gap-base: .5rem;
@@ -55,7 +55,7 @@ body{
 intro{
     z-index: 100;
     display: block;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     background: var(--theme-color-light);
@@ -191,6 +191,31 @@ social:active{transform: scale(1.4);}
 .insta{
     background-image: url("../icons/instagram.svg");
 }
+cta{
+    padding: var(--gap-base) var(--gap-1);
+    font-size: var(--web-text-body);
+    cursor: pointer;
+    display: flex;
+    gap: var(--gap-base);
+    align-items: center;
+    background: var(--theme-color-accent-1);
+    color: var(--theme-color-light);
+    font-weight: var(--web-weight-normal);
+    border-radius: var(--gap-base);
+}
+cta:hover{transform: scale(1.1);}
+cta:active{transform: scale(1.1);}
+iconCTA{
+    height: 24px;
+    width: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+iconCTA.doc{
+    background-image: url("../icons/File_dock_light.svg");
+}
+
 
 @media screen and (max-width: 800px) {
     dp{
