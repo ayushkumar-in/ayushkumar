@@ -146,7 +146,7 @@ logo{
 container{
     display: flex;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -237,4 +237,23 @@ iconCTA.doc{
     hyperlink-container{
         margin-right: 0;
     }
+}
+
+#sea{
+    position: absolute;
+    width: 100%;
+    min-height: 100dvh;
+    background: radial-gradient(102.87% 107.68% at 36.69% 0%, #0E8AC1 0%, #0567A5 48.1%, #01121A 100%);
+}
+.droplets1{    
+        background-image:url("../images/webDepth1.png");    
+}
+.droplets2{    
+    background-image:url("../images/webDepth2.png");
+    background-repeat: repeat-x;
+}
+
+.droplets3{   
+    background-image:url("../images/webDepth3.png");
+    background-repeat: repeat-x;
 }

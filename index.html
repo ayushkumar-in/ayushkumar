@@ -12,7 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="assets/styles/loader.css">
-    <script type="text/javascript" src="js/bundle/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/particles.min.js"></script>
     <script type="text/javascript" src="assets/scripts/interaction.js"></script>
     <script>
         window.onbeforeunload = function () {
@@ -46,14 +47,27 @@
             </hyperlink-container>
         </container>
     </header>
-    <container class="main-container flex-y">
-        <content style="height: 150vh;">
+    <div id="sea"></div>
+    <script src="assets/scripts/sea.js"></script>
+    <container id="content" class="main-container flex-y">
+        <content>
+            <br/>
+            <br/>
+            <br/>
             <loader-container>
                 <div class="loader"></div>
                 <p>well... 'bout the Portfolio... like most of us, I'm working on it 😅</p>
             </loader-container>
+            <br/>
+            <br/>
+            <br/>
         </content>
+        
+        
     </container>
+    <script>
+        document.getElementById('sea').style.height = document.getElementById('content').clientHeight + "px";
+    </script>
 </body>
 
 </html>
