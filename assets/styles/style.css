@@ -27,6 +27,7 @@
     --web-line-height-note: 1.4;
     /* #endregion */
 
+    --gap-base-s:.25rem;
     --gap-base: .5rem;
     --gap-1: 1rem;
     --gap-2: 1.5rem;
@@ -161,7 +162,7 @@ content{
     box-sizing: border-box;
     width: 100%;
     border: 1px solid var(--theme-color-accent-4);
-    border-radius: var(--gap-base);
+    border-radius: var(--gap-base-s);
     padding: var(--gap-1);
     background: var(--theme-color-light);
 }
