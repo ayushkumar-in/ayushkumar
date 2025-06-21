@@ -161,6 +161,7 @@ container{
 }
 content{
     box-sizing: border-box;
+    z-index: 1;
     width: 100%;
     border: 1px solid var(--theme-color-accent-4);
     border-radius: var(--gap-base-s);
@@ -217,7 +218,20 @@ iconCTA{
 iconCTA.doc{
     background-image: url("../icons/File_dock_light.svg");
 }
-
+footnote{
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    padding: var(--gap-base-s) var(--gap-3);
+}
+code{
+    background: url("../images/code.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio: 1/1;
+    height: 10rem;
+}
 
 @media screen and (max-width: 800px) {
     dp{
@@ -239,10 +253,15 @@ iconCTA.doc{
     hyperlink-container{
         margin-right: 0;
     }
+    footnote{
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 background{
     position: absolute;
+    z-index: 0;
     width: 100%;
     max-width: 100%;
     cursor:grab;

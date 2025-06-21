@@ -33,10 +33,12 @@ function ctaClick(action){
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    // console.log(document.getElementById('content').clientHeight);
     document.getElementById('sea').style.height = (document.getElementById('content').clientHeight) + 100 + "px";
     document.getElementById('background').style.height = (document.getElementById('content').clientHeight) + 100 + "px";
     document.getElementsByClassName('particles-js-canvas-el')[0].style.height = (document.getElementById('content').clientHeight) + 100 + "px";
     setTimeout(function() {
+        // console.log(document.getElementsByClassName('particles-js-canvas-el')[0].style.height);
         window.dispatchEvent(new Event('resize'));
         setTimeout(function(){document.getElementById('mainLoader').style.display ="none";},2800);
     }, 100);

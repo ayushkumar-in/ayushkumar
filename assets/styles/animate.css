@@ -10,7 +10,7 @@
     animation: swim2Right 30s linear infinite;
 }
 .orca{ 
-    position: absolute;width: 8%;
+    position: absolute;width: 9%;
     content: url("../gif/orca.gif");    
     animation: swim2Right2 40s linear infinite;
 }
