@@ -258,15 +258,13 @@ background{
     min-height: 100%;
     background: radial-gradient(102.87% 107.68% at 36.69% 0%, #0E8AC1 0%, #0567A5 48.1%, #01121A 100%);
 }
-.droplets1{    
-        background-image:url("../images/webDepth1.png");    
-}
-.droplets2{    
-    background-image:url("../images/webDepth2.png");
-    background-repeat: repeat-x;
-}
-
-.droplets3{   
-    background-image:url("../images/webDepth3.png");
-    background-repeat: repeat-x;
+mainLoader{
+    position: absolute;
+    z-index: 101;
+    width: 100%;
+    height: 100%;
+    background: var(--theme-color-light);
+    display: grid;
+    place-items: center;
+    align-items: center;
 }

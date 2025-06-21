@@ -38,5 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementsByClassName('particles-js-canvas-el')[0].style.height = (document.getElementById('content').clientHeight) + 100 + "px";
     setTimeout(function() {
         window.dispatchEvent(new Event('resize'));
+        setTimeout(function(){document.getElementById('mainLoader').style.display ="none";},2800);
     }, 100);
 });
