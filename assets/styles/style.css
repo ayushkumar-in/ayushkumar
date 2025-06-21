@@ -46,7 +46,8 @@ body{
     font-weight: var(--web-weight-normal);
     font-size: var(--web-text-body);
     font-style: normal;
-    line-height: var(--web-line-height-body)
+    line-height: var(--web-line-height-body);
+    overflow-x: hidden;
 }
 .glass{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -240,10 +241,20 @@ iconCTA.doc{
     }
 }
 
+background{
+    position: absolute;
+    width: 100%;
+    cursor:grab;
+    min-height: 100%;
+}
+.particles-js-canvas-el{
+    position: relative !important;
+    z-index: 1;
+}
 #sea{
     position: absolute;
     width: 100%;
-    min-height: 100dvh;
+    min-height: 100%;
     background: radial-gradient(102.87% 107.68% at 36.69% 0%, #0E8AC1 0%, #0567A5 48.1%, #01121A 100%);
 }
 .droplets1{    
