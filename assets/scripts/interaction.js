@@ -31,3 +31,12 @@ function ctaClick(action){
             break;
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('sea').style.height = (document.getElementById('content').clientHeight) + 100 + "px";
+    document.getElementById('background').style.height = (document.getElementById('content').clientHeight) + 100 + "px";
+    document.getElementsByClassName('particles-js-canvas-el')[0].style.height = (document.getElementById('content').clientHeight) + 100 + "px";
+    setTimeout(function() {
+        window.dispatchEvent(new Event('resize'));
+    }, 100);
+});

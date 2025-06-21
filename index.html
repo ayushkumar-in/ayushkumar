@@ -55,7 +55,6 @@
             </hyperlink-container>
         </container>
     </header>
-
     <background id="background">
         <div id="sea"></div>
         <script src="assets/scripts/sea.js"></script>
@@ -66,7 +65,6 @@
         <div id="fishLV4B1" class="jelly"></div>
         <div id="fishLV4B2" class="jelly2"></div> 
     </background>
-    
     <container id="content" class="main-container flex-y">
         <content>
             <br/>
@@ -104,10 +102,12 @@
             <br/>
         </content>
     </container>
+    
     <script>
-        console.log(document.getElementById('content').clientHeight);
-        document.getElementsByClassName('particles-js-canvas-el')[0].style.height = (document.getElementById('content').clientHeight) + 100 + "px";
-        document.getElementById('background').style.height = (document.getElementById('content').clientHeight) + 100 + "px";
+        // document.getElementsByClassName('particles-js-canvas-el')[0].style.height = (document.getElementById('content').clientHeight) + 100 + "px";
+        // document.getElementById('background').style.height = (document.getElementById('content').clientHeight) + 100 + "px";
+        // document.getElementById('background').style.transform = "scale(.8)";
+        // document.getElementById('background').style.transform = "scale(1)";
     </script>
 </body>
 
