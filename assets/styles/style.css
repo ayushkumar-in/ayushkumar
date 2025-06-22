@@ -156,6 +156,9 @@ container{
     padding: var(--gap-1);
     box-sizing: border-box;
 }
+#content{
+    gap: var(--gap-1);
+}
 .main-container{
     gap: var(--gap-1);
 }
@@ -163,11 +166,65 @@ content{
     box-sizing: border-box;
     z-index: 1;
     width: 100%;
-    border: 1px solid var(--theme-color-accent-4);
-    border-radius: var(--gap-base-s);
+    /* border: 1px solid var(--theme-color-accent-4); */
+    /* border-radius: var(--gap-base-s); */
     padding: var(--gap-1);
     background: var(--theme-color-light);
 }
+top-cut{
+    content: '';
+    position:relative ;
+    display: block;
+    top: -24px;
+    left: -1rem;
+    width: calc(100% + 2rem);
+    height: 8px;
+    background:url("../images/web-cut-up.svg");
+    background-position:bottom;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+bottom-cut{
+    content: '';
+    position: relative;
+    display: block;
+    bottom: -24px;
+    left: -1rem;
+    width: calc(100% + 2rem);
+    height: 8px;
+    background:url("../images/web-cut-down.svg");
+    background-position:top;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+/* content::before{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    top: 1px;
+    left: 1rem;
+    width: calc(100% - 2rem);
+    height: 16px;
+    background:url("../images/web-cut-up.svg");
+    background-position:top;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+} */
+/* content::after {
+      content: '';
+      position: absolute;
+      box-sizing: border-box;
+      bottom: 1px;
+      left: 1rem;
+      width: calc(100% - 2rem);
+      height: 16px;
+      background:url("../images/web-cut-down.svg");
+      background-position:top;
+      background-size:cover;
+      background-repeat: no-repeat;
+} */
 hyperlink-container{
     gap: var(--gap-2);
     margin-right: var(--gap-2);
@@ -223,6 +280,7 @@ footnote{
     align-items: center;
     font-style: italic;
     padding: var(--gap-base-s) var(--gap-3);
+    gap: var(--gap-2);
 }
 code{
     background: url("../images/code.svg");
@@ -230,7 +288,7 @@ code{
     background-repeat: no-repeat;
     background-size: contain;
     aspect-ratio: 1/1;
-    height: 10rem;
+    height: 8rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -275,7 +333,8 @@ background{
     position: absolute;
     width: 100%;
     min-height: 100%;
-    background: radial-gradient(102.87% 107.68% at 36.69% 0%, #0E8AC1 0%, #0567A5 48.1%, #01121A 100%);
+    background: radial-gradient(102.87% 107.68% at 36.69% 0%, #0E8AC1 0%, #0567A5 28.1%, #01121A 100%);
+    /* background: radial-gradient(102.87% 107.68% at 36.69% 0%, #0E8AC1 0%, #0567A5 48.1%, #01121A 100%); */
 }
 mainLoader{
     position: absolute;
