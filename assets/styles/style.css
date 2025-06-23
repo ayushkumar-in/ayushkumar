@@ -157,7 +157,7 @@ container{
     box-sizing: border-box;
 }
 #content{
-    gap: var(--gap-1);
+    gap: 16px;
 }
 .main-container{
     gap: var(--gap-1);
@@ -178,23 +178,23 @@ top-cut{
     top: -24px;
     left: -1rem;
     width: calc(100% + 2rem);
-    height: 8px;
+    height: 10px;
     background:url("../images/web-cut-up.svg");
-    background-position:bottom;
-    background-size:cover;
+    background-position:top;
+    background-size:100%;
     background-repeat: no-repeat;
 }
 bottom-cut{
     content: '';
     position: relative;
     display: block;
-    bottom: -24px;
+    bottom: -25px;
     left: -1rem;
     width: calc(100% + 2rem);
-    height: 8px;
+    height: 10px;
     background:url("../images/web-cut-down.svg");
-    background-position:top;
-    background-size:cover;
+    background-position:bottom;
+    background-size:100%;
     background-repeat: no-repeat;
 
 }
