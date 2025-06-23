@@ -390,7 +390,7 @@ project-details{
         gap: .625rem;
     }
     project{
-        width: 80%;
+        width: 90%;
     }
     project-container{
         gap:var(--gap-2);
