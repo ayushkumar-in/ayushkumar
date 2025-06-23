@@ -157,7 +157,7 @@ container{
     box-sizing: border-box;
 }
 #content{
-    gap: 16px;
+    gap: var(--gap-1);
 }
 .main-container{
     gap: var(--gap-1);
@@ -175,10 +175,10 @@ top-cut{
     content: '';
     position:relative ;
     display: block;
-    top: -24px;
+    top: -1.5rem;
     left: -1rem;
     width: calc(100% + 2rem);
-    height: 10px;
+    height: .625rem;
     background:url("../images/web-cut-up.svg");
     background-position:top;
     background-size:100%;
@@ -188,10 +188,10 @@ bottom-cut{
     content: '';
     position: relative;
     display: block;
-    bottom: -25px;
+    bottom: -1.536rem;
     left: -1rem;
     width: calc(100% + 2rem);
-    height: 10px;
+    height: .625rem;
     background:url("../images/web-cut-down.svg");
     background-position:bottom;
     background-size:100%;
@@ -289,21 +289,29 @@ code{
         text-align: center;
     }
     top-cut{
-        top: -21px;
+        padding: 0;
+        top: -1.312rem;
         left: -1rem;
         width: calc(100% + 2rem);
-        height: 5px;
+        height: .314rem;
         background:url("../images/mob-cut-up.svg");
+        background-size: 100%;
+        background-position: top;
+        background-repeat: no-repeat;
     }
     bottom-cut{
-        bottom: -21px;
+        padding: 0;
+        bottom: -1.312rem;
         left: -1rem;
         width: calc(100% + 2rem);
-        height: 5px;
+        height: .314rem;
         background:url("../images/mob-cut-down.svg");
+        background-size: 100%;
+        background-position: bottom;
+        background-repeat: no-repeat;
     }
     #content{
-        gap: 10px;
+        gap: .625rem;
     }
 }
 
